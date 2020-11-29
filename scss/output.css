@@ -1,17 +1,11 @@
 @charset "UTF-8";
-@font-face {
-  src: url("../resources/fonts/Space_Mono/static/SpaceMono-Regular.ttf") format("ttf");
-  font-family: "Space Mono";
-  font-weight: 400;
-}
-@font-face {
-  src: url("../resources/fonts/Lora/Lora-Regular.ttf") format("ttf");
-  font-family: "Lora";
-  font-weight: 400;
-}
 :root {
   --font-family-monospace: $font-family-monospace;
   --font-family-serif: $font-family-serif;
+}
+
+.text-monospace {
+  font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 html, body {
@@ -27,7 +21,7 @@ nav a, nav li a {
 .list-item h2 {
   padding-top: 32px;
   text-decoration: underline;
-  font-family: serif;
+  font-family: Lora, Georgia, "Times New Roman", Times, serif;
   color: #F8F4F0;
 }
 .list-item h6 {

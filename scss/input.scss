@@ -4,30 +4,34 @@ $line-color: #222224;
 $link-hover-color: #fff;
 $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
-$space-mono-font-path: "../resources/fonts/Space_Mono/static";
-$lora-font-path: "../resources/fonts/Lora";
+$space-mono-font-path: "../resources/fonts/Space_Mono";
+$lora-font-path: "../resources/fonts/Lora/Static";
 $font-family-monospace: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-serif: "Lora";
+$font-family-serif: Lora, Georgia, "Times New Roman", Times, serif;
 
-@font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$space-mono-font-path}/SpaceMono-Regular.ttf") format("ttf");
-
-    font-family: "Space Mono";
-    font-weight: 400;
-}
-
-@font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$lora-font-path}/Lora-Regular.ttf") format("ttf");
-
-    font-family: "Lora";
-    font-weight: 400;
-}
+// @font-face {
+//     // This is parsed as a normal function call that takes a quoted string.
+//     src: url("#{$space-mono-font-path}/SpaceMono-Regular.ttf") format("ttf");
+//
+//     font-family: "Space Mono";
+//     font-weight: 400;
+// }
+//
+// @font-face {
+//     // This is parsed as a normal function call that takes a quoted string.
+//     src: url("#{$lora-font-path}/Lora-Regular.ttf") format("ttf");
+//
+//     font-family: "Lora";
+//     font-weight: 400;
+// }
 
 :root {
   --font-family-monospace: $font-family-monospace;
   --font-family-serif: $font-family-serif;
+}
+
+.text-monospace,  {
+  font-family: $font-family-monospace;
 }
 
 html, body {
@@ -44,7 +48,7 @@ nav a, nav li a {
   h2 {
     padding-top: 32px;
     text-decoration: underline;
-    font-family: serif;
+    font-family: $font-family-serif;
     color: $body-color;
   }
 
